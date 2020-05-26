@@ -1,3 +1,22 @@
+.navbar {
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+
+@font-face { font-family: Jost; src: url('Jost.ttf'); } 
+
+.item {
+  float: left;
+  font-family: "Jost";
+  text-decoration: none;
+  padding: 16px 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+}
+
 h1{
     color: white;
     animation-duration: 3s;
@@ -16,6 +35,7 @@ h1{
     }
   }
 
-body {
-    background-color: firebrick;
+body{
+  margin: 0;
 }
+
