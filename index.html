@@ -10,7 +10,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+<body class="w3-theme-l5" onload="checkCookie()">
+<body onload="checkCookie()">
 <div class="navbar">
     <a class = "item">Ashish Selvaraj</a>
 </div>
@@ -24,6 +26,21 @@
     <p><i class="fa fa-book right-align"></i> Favorite Books: Lord Of The Rings, Harry Potter, Hitchhiker's Guide to the Galaxy, Redwall</p>
     <p><i class="fas fa-chess right-align"></i> Hobbies: I like playing chess on lichess.org! Occasional electronics projects.</p>
     <i class="fas fa-laptop-code right-align">GitHub:</i><a href="https://github.com/SaurontheMighty/" target="_blank"> github.com/SaurontheMighty/</a>
+    <br>
+    &nbsp;
+    <hr>
+    <div>
+    <strong><p id="name"></p></strong>
+      <div class="tooltip">
+      <p>We use cookies to store your name! To delete the cookie just press <a onclick="delCookie(document.cookie)" style="cursor: pointer;">this.</a></p>
+      <span class="tooltiptext">See Right-hand Column</span>
+      </div>
+      <p></p>
+      <a onclick="alert(ip)">P.S. Want to know your IP address?</a>
+      <p id="small">(This information is neither stored nor shared)<p>
+    </div>
+    <br>
+    &nbsp;
 </div>
 <div class="header">
 <h1>Portfolio</h1>
