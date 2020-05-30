@@ -1,29 +1,82 @@
 .navbar {
+  position: relative;
+  text-align: center;
+  align-content: center;
   overflow: hidden;
+  padding: 20px;
   background-color: #f7f7f7;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.avatar{
+  border-radius: 50%;
+}
 
 @font-face { font-family: Jost; src: url('Jost.ttf'); } 
 
 .item {
-  float: left;
+  text-align: center;
   font-family: "Jost";
   text-decoration: none;
-  padding: 16px 20px;
+  padding: 46px 50px;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
   color: #000;
 }
 
-h1{
-    color: white;
-    animation-duration: 3s;
-    animation-name: slidein;
+a{
+  font-family: "Jost";
+  color:#32a89e; 
+  text-decoration:underline;
+  cursor: pointer;
 }
 
-@keyframes slidein {
+.about{
+  background-color: #26262b;
+  text-align: center;
+  font-family: "Jost";
+  flex: 30%;
+  padding: 0px 20px;
+  color: white;
+  animation-duration: 2s;
+  animation-name: slideup;
+}
+
+.main-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header{
+  height: 1000px;
+  flex: 70%;
+  color: white;
+  font-family: "Jost";
+  padding: 0px 20px;
+  animation-duration: 2s;
+  animation-name: slideup;
+}
+
+.header h1{
+  text-align: center;
+
+}
+
+.project h2{
+  color: white;
+  text-decoration: underline;
+}
+
+.project p{
+  color: white;
+  font-size: 145%;
+}
+
+/* @keyframes slideup {
     from {
       margin-left: 100%;
       width: 100%; 
@@ -33,9 +86,19 @@ h1{
       margin-left: 0%;
       width: 100%;
     }
+  } */
+
+@media screen and (max-width: 700px) {
+  .main-content {   
+    flex-direction: column;
   }
+}
 
 body{
+  background-color: #e06100;
   margin: 0;
 }
 
+.footer{
+  background-color: #f7f7f7;
+}
