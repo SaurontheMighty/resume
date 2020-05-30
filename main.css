@@ -4,7 +4,7 @@
   align-content: center;
   overflow: hidden;
   padding: 20px;
-  background-color: #f7f7f7;
+  background-color: #ba4100;
 }
 
 * {
@@ -25,15 +25,40 @@
   text-align: center;
   font-weight: bold;
   font-size: 30px;
-  color: #000;
+  color: #fff;
+}
+
+.right-align{
+  text-align: start;
+  align-content: flex-start;
 }
 
 a{
   font-family: "Jost";
-  color:#32a89e; 
+  color:#ff0000; 
   text-decoration:underline;
   cursor: pointer;
 }
+
+.flex2{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftside{
+  flex: 10%;
+  text-align: flex-start;
+  padding-right: 20px;
+}
+
+.rightside{
+  flex: 0%;
+  height: 200px;
+  align-self: flex-end;
+  text-align: end;
+  padding-left: 20px;
+}
+
 
 .about{
   background-color: #26262b;
@@ -46,13 +71,28 @@ a{
   animation-name: slideup;
 }
 
+.about p{
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.half1{
+  width: 50%;
+  float: left;
+}
+
+.half2{
+  width: 50%;
+  float: right;
+}
+
 .main-content{
   display: flex;
   flex-wrap: wrap;
 }
 
 .header{
-  height: 1000px;
   flex: 70%;
   color: white;
   font-family: "Jost";
@@ -95,10 +135,14 @@ a{
 }
 
 body{
-  background-color: #e06100;
+  background-color: #ff6a1f;
   margin: 0;
 }
 
 .footer{
-  background-color: #f7f7f7;
+  background-color: #ba4100;
+}
+
+.footer a{
+  color: #00ff00;
 }
