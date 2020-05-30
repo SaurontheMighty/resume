@@ -142,9 +142,20 @@ body{
 }
 
 .footer{
+  display: flex;
   background-color: #ba4100;
 }
 
 .footer a{
+  align-self: start;
   color: #00ff00;
+}
+
+.footer p{
+  align-self: end;
+  color: white;
+}
+
+hr{
+  color: white;
 }
