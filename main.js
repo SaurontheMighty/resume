@@ -39,9 +39,6 @@ function checkCookie() {
       document.getElementById("name").innerHTML = "Hey John Doe!";
     }
 }
-function getIP(json) {
-    window.ip = json.ip;
-}
 function delCookie() {
     window.document.cookie = "username=; expires=Wed, 24 Apr 2002 00:00:00 UTC; path=/;";
     alert("Cookie Deleted!");
